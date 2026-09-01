@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      background-color: #f1f1f1;
+    }
+    
+    .title {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #0093E9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    
+    button:hover {
+      background-color: #0082cc;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="title">
+      Medical Insurance Cost Prediction
+    </div>
+    <div>
+      Please signup to use this website to predict the medical insurance cost of a subject.
+    </div>
+  </center>
+  
+  <form action="/relogin">
+    <button>Login</button>
+  </form>
+  
+  <form action="/resignup">
+    <button type="submit">Signup</button>
+  </form>
+</body>
+</html>

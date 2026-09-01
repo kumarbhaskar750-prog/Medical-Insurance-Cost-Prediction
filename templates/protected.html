@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Quote Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #0093E9;
+    }
+    
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #0093E9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0082cc;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/first_page">Logout</a></li>
+    </ul>
+  </nav>
+  <h2>Medical Insurance Cost Prediction</h2>
+  <form action="/upload" method="POST">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex" required>
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select><br>
+
+    <label for="bmi">BMI:</label>
+    <input type="number" step="0.01" id="bmi" name="bmi" required><br>
+
+    <label for="children">Number of Children:</label>
+    <input type="number" id="children" name="children" required><br>
+
+    <label for="smoker">Smoker:</label>
+    <select id="smoker" name="smoker" required>
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select><br>
+
+    <label for="region">Region:</label>
+    <select id="region" name="region" required>
+      <option value="4">Northeast</option>
+      <option value="3">Northwest</option>
+      <option value="2">Southeast</option>
+      <option value="1">Southwest</option>
+    </select><br>
+
+    <input type="submit" value="Calculate">
+  </form>
+</body>
+
+</html>
